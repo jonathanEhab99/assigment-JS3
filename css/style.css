@@ -1,0 +1,59 @@
+
+.bg-second{
+    background-color: rgb(247, 126, 60) ;
+
+}
+.bg-main{
+    background-color: rgb(213, 213, 241);
+}
+h1{
+    padding: 1rem;
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+    font-weight: bold;
+    font-size: 3rem;
+    position: relative;
+    transition: all .5s ease-in-out;
+    text-align: center;
+    z-index: 6;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+h1::after{
+    content: "";
+    position: absolute;
+    border-radius: 2.5px;
+    width: 100%;
+    height: 20%;
+    left: 0;
+    bottom: 10px;
+    z-index: -1;
+    background-color: #f77e3c;
+    transition: all .5s ease-in-out;
+
+}
+
+@media screen and (max-width: 767px) {
+    h1{
+        font-size: 2.5rem;
+
+    }
+    h2{
+        font-size: 1.5rem;
+
+    }
+    label{
+        display: none;
+    }
+    th{
+        font-size: smaller;
+    }
+
+}
+.border-dot{
+ border-width: 2px 0 ;
+ border-color: black;
+ border-style: dotted;
+}

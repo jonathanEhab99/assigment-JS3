@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmarker</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="py-5 min-vh-100 position-relative bg-main">
+      <div class="container justify-content-center d-flex ">
+        <div class="col-lg-10 justify-content-center d-flex flex-column align-items-center">
+          <h1 >Bookmarker</h1>
+          <div class="mt-5 p-3 border-dot w-100">
+            <h2 class="my-gradient text-center"><i class="fa-solid fa-bookmark me-2"></i>Bookmark your favorite sites<i class="ms-2 fa-solid fa-bookmark"></i></h2>
+            <label for="bookmarksNameInp" class="m-2">Name Book</label>
+            <input type="text" id="bookmarksNameInp" placeholder="NameBook" class="form-control" oninput="validationName(this)">
+           
+            <label for="bookmarksUrlInp" class="m-2">URL</label>
+            <input type="text" id="bookmarksUrlInp" placeholder="www.example.com" class="form-control" oninput="validationMail(this)">
+            
+            <button class="btn btn-dark my-4" id="dataControl" onclick="addData()">Add Bookmark</button>
+            
+            <div id="valid">
+            </div>
+          </div>
+         
+          <table class="table table-striped mt-4 rounded-top-2 overflow-hidden table-striped text-center">
+            <thead>
+              <th>Index</th>
+              <th>Bookmark Name</th>
+              <th>Visit</th>
+              <th>Delete</th>
+            </thead>
+            <tbody id="tableList">
+            
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
